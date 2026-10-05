@@ -23,15 +23,24 @@ export const metadata: Metadata = {
     apple: '/icon.svg',
   },
   openGraph: {
-    title: 'Cargova Logistics | Command Global Freight With Precision',
+    title: 'Cargova Logistics | Global Supply Chain - Egypt to the World',
     description: 'Premier air, ocean, and multimodal logistics solutions connecting Egypt with 150+ countries worldwide.',
     type: 'website',
     siteName: 'Cargova Logistics',
+    images: [
+      {
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Cargova Logistics - Global Supply Chain Solutions Egypt to the World',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Cargova Logistics | Command Global Freight With Precision',
+    title: 'Cargova Logistics | Global Supply Chain - Egypt to the World',
     description: 'Connecting Egypt with 150+ countries worldwide through air, ocean, and customs clearance logistics.',
+    images: ['/og-image.jpg'],
   },
 };
 
