@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60" fill="none">
+  <rect width="200" height="60" rx="8" fill="#006564"/>
+  <path d="M22 36 C28 22, 40 24, 46 20 C42 28, 32 30, 22 36 Z" fill="#FFFFFF"/>
+  <text x="54" y="32" font-family="Arial, sans-serif" font-weight="800" font-size="13" fill="#FFFFFF">CATHAY PACIFIC</text>
+  <text x="54" y="45" font-family="Arial, sans-serif" font-weight="700" font-size="9" fill="#A7F3D0" letter-spacing="2">CARGO</text>
+</svg>

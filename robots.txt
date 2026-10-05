@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cargova-logistics.com/sitemap.xml

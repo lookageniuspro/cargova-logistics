@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60" fill="none">
+  <rect width="200" height="60" rx="8" fill="#18181B"/>
+  <circle cx="34" cy="30" r="14" fill="#E81932"/>
+  <path d="M26 31 C28 25, 36 24, 42 27 C38 29, 34 32, 26 31 Z" fill="#FFFFFF"/>
+  <text x="56" y="33" font-family="Arial, sans-serif" font-weight="900" font-size="14" fill="#FFFFFF">TURKISH</text>
+  <text x="56" y="45" font-family="Arial, sans-serif" font-weight="700" font-size="9" fill="#E81932" letter-spacing="2">CARGO</text>
+</svg>

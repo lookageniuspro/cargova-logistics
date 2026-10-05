@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60" fill="none">
+  <rect width="200" height="60" rx="8" fill="#0C3466"/>
+  <circle cx="35" cy="30" r="14" fill="#C0161C"/>
+  <path d="M26 30 Q35 20 44 30 Q35 40 26 30 Z" fill="#FFFFFF"/>
+  <text x="60" y="38" font-family="Arial, sans-serif" font-weight="900" font-size="20" fill="#FFFFFF" letter-spacing="1.5">COSCO</text>
+  <text x="60" y="48" font-family="Arial, sans-serif" font-weight="600" font-size="9" fill="#93C5FD" letter-spacing="2">SHIPPING</text>
+</svg>

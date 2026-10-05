@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60" fill="none">
+  <rect width="200" height="60" rx="8" fill="#0A3E2A"/>
+  <circle cx="32" cy="30" r="14" fill="#008850"/>
+  <path d="M32 18 L36 28 L42 30 L37 34 L38 42 L32 37 L26 42 L27 34 L22 30 L28 28 Z" fill="#F8FAFC"/>
+  <text x="56" y="38" font-family="Arial, sans-serif" font-weight="900" font-size="17" fill="#FFFFFF" letter-spacing="1">EVERGREEN</text>
+  <text x="56" y="48" font-family="Arial, sans-serif" font-weight="600" font-size="8" fill="#4ADE80" letter-spacing="2">MARINE CORP</text>
+</svg>

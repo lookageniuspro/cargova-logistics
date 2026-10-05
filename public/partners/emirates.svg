@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60" fill="none">
+  <rect width="200" height="60" rx="8" fill="#18181B"/>
+  <rect x="18" y="16" width="30" height="28" rx="4" fill="#D71921"/>
+  <text x="33" y="35" font-family="'Times New Roman', serif" font-weight="bold" font-size="18" fill="#FFFFFF" text-anchor="middle">EK</text>
+  <text x="56" y="32" font-family="Arial, sans-serif" font-weight="900" font-size="16" fill="#FFFFFF">Emirates</text>
+  <text x="56" y="45" font-family="Arial, sans-serif" font-weight="700" font-size="9" fill="#D71921" letter-spacing="2">SKYCARGO</text>
+</svg>

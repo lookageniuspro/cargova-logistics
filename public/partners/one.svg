@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60" fill="none">
+  <rect width="200" height="60" rx="8" fill="#1C1917"/>
+  <rect x="20" y="16" width="30" height="28" rx="4" fill="#E4007F"/>
+  <text x="35" y="36" font-family="Arial, sans-serif" font-weight="900" font-size="16" fill="#FFFFFF" text-anchor="middle">ONE</text>
+  <text x="60" y="34" font-family="Arial, sans-serif" font-weight="900" font-size="16" fill="#E4007F" letter-spacing="1">OCEAN NETWORK</text>
+  <text x="60" y="46" font-family="Arial, sans-serif" font-weight="700" font-size="10" fill="#FFFFFF" letter-spacing="2">EXPRESS</text>
+</svg>

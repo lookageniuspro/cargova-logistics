@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60" fill="none">
+  <rect width="200" height="60" rx="8" fill="#5C0632"/>
+  <circle cx="34" cy="30" r="14" fill="#FFFFFF"/>
+  <path d="M28 32 C30 24, 38 24, 40 32 Z" fill="#5C0632"/>
+  <text x="56" y="32" font-family="'Times New Roman', serif" font-weight="bold" font-size="16" fill="#FFFFFF">QATAR</text>
+  <text x="56" y="44" font-family="Arial, sans-serif" font-weight="700" font-size="8.5" fill="#E2E8F0" letter-spacing="2">AIRWAYS CARGO</text>
+</svg>

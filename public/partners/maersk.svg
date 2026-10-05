@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60" fill="none">
+  <rect width="200" height="60" rx="8" fill="#0E2344"/>
+  <path d="M35 30 L45 15 L55 30 L45 45 Z" fill="#41B6E6"/>
+  <circle cx="45" cy="30" r="5" fill="#FFFFFF"/>
+  <text x="75" y="38" font-family="Arial, sans-serif" font-weight="900" font-size="22" fill="#FFFFFF" letter-spacing="1.5">MAERSK</text>
+</svg>
