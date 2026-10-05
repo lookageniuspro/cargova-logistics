@@ -46,9 +46,21 @@ export function Hero() {
 
   return (
     <section className="relative overflow-hidden pt-8 pb-16 lg:pt-14 lg:pb-24 bg-gradient-to-b from-[#0a1628] via-[#070e1a] to-[#070e1a]">
-      {/* Background ambient lighting glow */}
-      <div className="absolute top-1/4 left-1/4 w-[500px] h-[350px] bg-sky-500/10 rounded-full blur-[140px] pointer-events-none" />
-      <div className="absolute top-1/3 right-10 w-[450px] h-[350px] bg-blue-600/10 rounded-full blur-[120px] pointer-events-none" />
+      {/* Background ambient lighting glow - 100% hardware-safe radial gradients (prevents mobile GPU blur overflow) */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        <div 
+          className="absolute -top-12 -left-12 w-[340px] sm:w-[600px] h-[340px] sm:h-[500px] rounded-full pointer-events-none"
+          style={{
+            background: 'radial-gradient(circle, rgba(14, 165, 233, 0.12) 0%, transparent 70%)',
+          }}
+        />
+        <div 
+          className="absolute top-1/3 -right-12 w-[300px] sm:w-[500px] h-[300px] sm:h-[450px] rounded-full pointer-events-none"
+          style={{
+            background: 'radial-gradient(circle, rgba(37, 99, 235, 0.1) 0%, transparent 70%)',
+          }}
+        />
+      </div>
 
       {/* Grid overlay pattern */}
       <div 
@@ -64,7 +76,7 @@ export function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           
           {/* Left Column (6 Cols on lg): Headline, Search & CTAs */}
-          <div className="lg:col-span-6 space-y-6 text-center lg:text-left rtl:lg:text-right">
+          <div className="relative z-10 lg:col-span-6 space-y-6 text-center lg:text-left rtl:lg:text-right">
             {/* Badge */}
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-sky-500/10 border border-sky-500/30 text-sky-400 text-xs sm:text-sm font-semibold shadow-sm backdrop-blur-sm">
               <Sparkles className="w-3.5 h-3.5 text-sky-400" />

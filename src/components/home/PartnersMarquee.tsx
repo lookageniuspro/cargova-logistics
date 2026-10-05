@@ -31,9 +31,17 @@ export function PartnersMarquee() {
 
   return (
     <section className="py-20 bg-[#081120] relative overflow-hidden">
-      {/* Decorative gradient blur */}
-      <div className="absolute top-1/2 left-0 w-72 h-72 bg-sky-600/5 rounded-full blur-[100px] pointer-events-none" />
-      <div className="absolute top-1/2 right-0 w-72 h-72 bg-blue-600/5 rounded-full blur-[100px] pointer-events-none" />
+      {/* Decorative gradient blur - hardware-safe */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        <div 
+          className="absolute top-1/2 -left-20 w-72 h-72 rounded-full pointer-events-none"
+          style={{ background: 'radial-gradient(circle, rgba(2, 132, 199, 0.08) 0%, transparent 70%)' }}
+        />
+        <div 
+          className="absolute top-1/2 -right-20 w-72 h-72 rounded-full pointer-events-none"
+          style={{ background: 'radial-gradient(circle, rgba(37, 99, 235, 0.08) 0%, transparent 70%)' }}
+        />
+      </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12 text-center">
         <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-sky-500/10 border border-sky-500/30 text-sky-400 text-xs font-semibold mb-3">

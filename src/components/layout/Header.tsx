@@ -25,9 +25,12 @@ export function Header({ locale }: HeaderProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full backdrop-blur-xl bg-[#070e1a]/90 border-b border-slate-800/80 transition-all">
+    <header 
+      className="sticky top-0 z-50 w-full bg-[#070e1a] sm:bg-[#070e1a]/95 sm:backdrop-blur-xl border-b border-slate-800/80 transition-all"
+      style={{ WebkitBackfaceVisibility: 'hidden', transform: 'translate3d(0, 0, 0)' }}
+    >
       {/* Top micro bar for global dispatch & official email */}
-      <div className="bg-[#0a1628] border-b border-slate-800/60 text-xs py-1.5 px-4 sm:px-6 lg:px-8">
+      <div className="bg-[#070e1a] border-b border-slate-800/60 text-xs py-1.5 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto flex items-center justify-between gap-4">
           <div className="flex items-center gap-6">
             {/* Mandatory official email */}
