@@ -13,16 +13,25 @@ export function generateStaticParams() {
 
 export const metadata: Metadata = {
   title: 'Cargova Logistics | Global Freight Forwarding, Air & Ocean Cargo',
-  description: 'Cargova Logistics is a premier global freight forwarder providing air freight, ocean container shipping (FCL/LCL), customs clearance, and real-time cargo tracking across 150+ countries.',
-  keywords: 'Cargova Logistics, freight forwarding, ocean freight, air cargo, container shipping, cargo tracking, customs brokerage, international logistics, Maersk, MSC, Emirates SkyCargo',
+  description: 'Premier global freight forwarder connecting Egypt and 150+ countries worldwide with air, ocean (FCL/LCL), customs clearance, and real-time cargo tracking.',
+  keywords: 'Cargova Logistics, Egypt logistics, Suez canal freight, ocean freight, air cargo, container shipping, cargo tracking, customs brokerage, Maersk, MSC, Emirates SkyCargo',
   authors: [{ name: 'Cargova Logistics' }],
-  metadataBase: new URL('https://cargova-logistics.vercel.app'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://cargova-logistics.vercel.app'),
+  icons: {
+    icon: '/icon.svg',
+    shortcut: '/icon.svg',
+    apple: '/icon.svg',
+  },
   openGraph: {
     title: 'Cargova Logistics | Command Global Freight With Precision',
-    description: 'Premier air, ocean, and multimodal logistics solutions connecting 150+ countries worldwide.',
+    description: 'Premier air, ocean, and multimodal logistics solutions connecting Egypt with 150+ countries worldwide.',
     type: 'website',
-    locale: 'en_US',
     siteName: 'Cargova Logistics',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Cargova Logistics | Command Global Freight With Precision',
+    description: 'Connecting Egypt with 150+ countries worldwide through air, ocean, and customs clearance logistics.',
   },
 };
 
