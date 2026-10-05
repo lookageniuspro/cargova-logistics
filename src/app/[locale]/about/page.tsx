@@ -13,6 +13,7 @@ import {
   Phone,
   ArrowRight
 } from 'lucide-react';
+import { AnimatedCounter } from '@/components/ui/AnimatedCounter';
 
 interface AboutPageProps {
   params: {
@@ -39,6 +40,34 @@ export default function AboutPage({ params: { locale } }: AboutPageProps) {
           <p className="text-slate-300 text-base sm:text-lg leading-relaxed">
             {t('subtitle')}
           </p>
+        </div>
+
+        {/* Animated Key Metrics Bar */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 p-6 sm:p-8 rounded-3xl bg-slate-900/80 border border-slate-800 shadow-2xl backdrop-blur-sm">
+          <div className="text-center space-y-1">
+            <div className="text-3xl sm:text-4xl font-black text-sky-400 font-display">
+              <AnimatedCounter value="150+" duration={1800} />
+            </div>
+            <div className="text-xs sm:text-sm text-slate-300 font-medium">Global Hubs Connected</div>
+          </div>
+          <div className="text-center space-y-1">
+            <div className="text-3xl sm:text-4xl font-black text-amber-400 font-display">
+              <AnimatedCounter value="25,000+" duration={2200} liveTicker={true} tickerInterval={4000} />
+            </div>
+            <div className="text-xs sm:text-sm text-slate-300 font-medium">Shipments Dispatched</div>
+          </div>
+          <div className="text-center space-y-1">
+            <div className="text-3xl sm:text-4xl font-black text-emerald-400 font-display">
+              <AnimatedCounter value="99.4%" duration={2000} />
+            </div>
+            <div className="text-xs sm:text-sm text-slate-300 font-medium">On-Time Cargo Rate</div>
+          </div>
+          <div className="text-center space-y-1">
+            <div className="text-3xl sm:text-4xl font-black text-purple-400 font-display">
+              <AnimatedCounter value="24/7" duration={1200} />
+            </div>
+            <div className="text-xs sm:text-sm text-slate-300 font-medium">Dispatch Operations Desk</div>
+          </div>
         </div>
 
         {/* Mission & Vision Cards */}

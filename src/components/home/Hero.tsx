@@ -14,8 +14,10 @@ import {
   Sparkles,
   Plane,
   Ship,
-  MapPin
+  MapPin,
+  Activity
 } from 'lucide-react';
+import { AnimatedCounter } from '@/components/ui/AnimatedCounter';
 
 // Dynamic import with ssr: false for client-side WebGL Canvas
 const Globe3D = dynamic(
@@ -146,6 +148,30 @@ export function Hero() {
                   CGV2024002 (Ocean)
                 </button>
               </div>
+              {/* Live operational fleet telemetry counters */}
+              <div className="pt-2 flex flex-wrap items-center justify-center lg:justify-start gap-4 text-xs font-mono text-slate-400">
+                <div className="flex items-center gap-1.5">
+                  <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+                  <span>Trade Lanes:</span>
+                  <span className="text-emerald-400 font-bold">
+                    <AnimatedCounter value="26" duration={1200} />
+                  </span>
+                </div>
+                <div className="flex items-center gap-1.5">
+                  <Ship className="w-3.5 h-3.5 text-sky-400" />
+                  <span className="text-sky-400 font-bold">
+                    <AnimatedCounter value="42" duration={1600} liveTicker={true} tickerInterval={4500} />
+                  </span>
+                  <span>Active Vessels</span>
+                </div>
+                <div className="flex items-center gap-1.5">
+                  <Plane className="w-3.5 h-3.5 text-amber-400" />
+                  <span className="text-amber-400 font-bold">
+                    <AnimatedCounter value="28" duration={1400} />
+                  </span>
+                  <span>Cargo Flights</span>
+                </div>
+              </div>
             </div>
 
             {/* Action CTAs */}
@@ -182,9 +208,7 @@ export function Hero() {
 
           {/* Right Column (6 Cols on lg): Interactive 3D Globe with Egypt routes */}
           <div className="lg:col-span-6 relative w-full flex items-center justify-center">
-            <div className="w-full rounded-3xl bg-slate-950/40 border border-slate-800/80 p-2 sm:p-4 backdrop-blur-sm shadow-2xl relative">
-              <Globe3D />
-            </div>
+            <Globe3D />
           </div>
 
         </div>
