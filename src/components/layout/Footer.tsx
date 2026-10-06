@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import { 
@@ -54,11 +55,14 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
           {/* Brand info */}
           <div className="lg:col-span-2 space-y-4">
-            <Link href="/" className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-sky-500 to-blue-700 flex items-center justify-center text-white shadow-lg">
-                <Ship className="w-5 h-5 text-white" />
-              </div>
-              <span className="text-2xl font-black tracking-wider text-white">CARGOVA</span>
+            <Link href="/" className="inline-block group py-1">
+              <Image
+                src="/cargova-logo-dark.png"
+                alt="Cargova Logistics"
+                width={210}
+                height={74}
+                className="h-10 w-auto object-contain transition-transform group-hover:scale-105"
+              />
             </Link>
             <p className="text-slate-400 leading-relaxed max-w-sm">
               {t('tagline')}

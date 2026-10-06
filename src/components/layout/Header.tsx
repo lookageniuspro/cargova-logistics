@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import { LanguageSwitcher } from './LanguageSwitcher';
@@ -63,22 +64,16 @@ export function Header({ locale }: HeaderProps) {
       {/* Main navigation bar */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 group">
-            <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-sky-500 to-blue-700 flex items-center justify-center text-white shadow-lg shadow-sky-500/20 group-hover:scale-105 transition-transform">
-              <Ship className="w-6 h-6 text-white" />
-            </div>
-            <div>
-              <div className="flex items-center gap-1">
-                <span className="text-xl sm:text-2xl font-black tracking-wider text-white">CARGOVA</span>
-                <span className="text-xs font-bold px-1.5 py-0.5 rounded bg-amber-500/20 text-amber-400 border border-amber-500/30">
-                  GLOBAL
-                </span>
-              </div>
-              <p className="text-[10px] tracking-widest text-slate-400 uppercase font-semibold">
-                Freight & Logistics
-              </p>
-            </div>
+          {/* Official Cargova Logo */}
+          <Link href="/" className="flex items-center group py-2">
+            <Image
+              src="/cargova-logo-dark.png"
+              alt="Cargova Logistics"
+              width={220}
+              height={78}
+              priority
+              className="h-10 sm:h-12 w-auto object-contain transition-transform duration-200 group-hover:scale-105"
+            />
           </Link>
 
           {/* Desktop Nav Links */}
