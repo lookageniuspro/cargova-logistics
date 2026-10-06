@@ -18,9 +18,15 @@ export const metadata: Metadata = {
   authors: [{ name: 'Cargova Logistics' }],
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://cargova-logistics.com'),
   icons: {
-    icon: '/icon.svg',
-    shortcut: '/icon.svg',
-    apple: '/icon.svg',
+    icon: [
+      { url: '/favicon.ico', sizes: '48x48', type: 'image/x-icon' },
+      { url: '/favicon-48x48.png', sizes: '48x48', type: 'image/png' },
+      { url: '/icon.png', sizes: '512x512', type: 'image/png' },
+    ],
+    shortcut: '/favicon.ico',
+    apple: [
+      { url: '/apple-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
   },
   openGraph: {
     title: 'Cargova Logistics | Global Supply Chain - Egypt to the World',
@@ -79,6 +85,10 @@ export default async function LocaleLayout({
           href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&family=Orbitron:wght@500;700;900&display=swap"
           rel="stylesheet"
         />
+        <link rel="icon" href="/favicon.ico" sizes="48x48" />
+        <link rel="icon" href="/favicon-48x48.png" sizes="48x48" type="image/png" />
+        <link rel="icon" href="/icon.png" sizes="512x512" type="image/png" />
+        <link rel="apple-touch-icon" href="/apple-icon.png" sizes="180x180" />
       </head>
       <body className="min-h-screen bg-[#070e1a] text-slate-100 antialiased flex flex-col selection:bg-sky-500 selection:text-white">
         <NextIntlClientProvider messages={messages} locale={locale}>
