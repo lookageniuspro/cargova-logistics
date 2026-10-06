@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { routing } from '@/i18n/routing';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://cargova-logistics.vercel.app';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://cargova-logistics.com';
 
   // All static paths across the platform
   const paths = [

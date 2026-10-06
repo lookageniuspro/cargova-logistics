@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   description: 'Premier global freight forwarder connecting Egypt and 150+ countries worldwide with air, ocean (FCL/LCL), customs clearance, and real-time cargo tracking.',
   keywords: 'Cargova Logistics, Egypt logistics, Suez canal freight, ocean freight, air cargo, container shipping, cargo tracking, customs brokerage, Maersk, MSC, Emirates SkyCargo',
   authors: [{ name: 'Cargova Logistics' }],
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://cargova-logistics.vercel.app'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://cargova-logistics.com'),
   icons: {
     icon: '/icon.svg',
     shortcut: '/icon.svg',
