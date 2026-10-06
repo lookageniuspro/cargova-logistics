@@ -42,6 +42,9 @@ export const metadata: Metadata = {
     description: 'Connecting Egypt with 150+ countries worldwide through air, ocean, and customs clearance logistics.',
     images: ['/og-image.jpg'],
   },
+  verification: {
+    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || 'google-site-verification',
+  },
 };
 
 interface RootLayoutProps {
